@@ -1,0 +1,39 @@
+#sports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.sport {
+    height: 250px;
+    padding: 1rem;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.sport:hover {
+    transform: scale(1.03);
+}
+
+.sport h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.sport p {
+    margin: 0.5rem 0;
+}
+
+.sport a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
